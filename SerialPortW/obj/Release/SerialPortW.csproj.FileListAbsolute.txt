@@ -5,3 +5,4 @@ D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.Properties.Resource
 D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.csproj.GenerateResource.Cache
 D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.exe
 D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.pdb
+D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.csprojResolveAssemblyReference.cache
