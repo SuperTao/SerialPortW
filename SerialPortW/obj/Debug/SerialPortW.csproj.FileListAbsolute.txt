@@ -1,0 +1,7 @@
+D:\vsProject\SerialPortW\SerialPortW\bin\Debug\SerialPortW.exe
+D:\vsProject\SerialPortW\SerialPortW\bin\Debug\SerialPortW.pdb
+D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.SerialPortW.resources
+D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.Properties.Resources.resources
+D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.csproj.GenerateResource.Cache
+D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.exe
+D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.pdb
