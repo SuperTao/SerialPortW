@@ -12,8 +12,10 @@ namespace SerialPortW
         [STAThread]
         static void Main()
         {
+            //启用可视样式 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //显示窗口
             Application.Run(new SerialPortW());
         }
     }

@@ -39,30 +39,39 @@
             this.label4 = new System.Windows.Forms.Label();
             this.stop = new System.Windows.Forms.ComboBox();
             this.start = new System.Windows.Forms.Button();
+            this.dataBits = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cleanText = new System.Windows.Forms.Button();
+            this.sendText = new System.Windows.Forms.TextBox();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 14);
+            this.label1.Location = new System.Drawing.Point(14, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Serial Port:";
             // 
             // serialPorts
             // 
             this.serialPorts.FormattingEnabled = true;
-            this.serialPorts.Location = new System.Drawing.Point(94, 11);
+            this.serialPorts.Location = new System.Drawing.Point(123, 91);
+            this.serialPorts.Margin = new System.Windows.Forms.Padding(4);
             this.serialPorts.Name = "serialPorts";
-            this.serialPorts.Size = new System.Drawing.Size(84, 20);
+            this.serialPorts.Size = new System.Drawing.Size(111, 23);
             this.serialPorts.TabIndex = 1;
             // 
             // send
             // 
-            this.send.Location = new System.Drawing.Point(185, 14);
+            this.send.Location = new System.Drawing.Point(17, 22);
+            this.send.Margin = new System.Windows.Forms.Padding(4);
             this.send.Name = "send";
-            this.send.Size = new System.Drawing.Size(78, 41);
+            this.send.Size = new System.Drawing.Size(104, 51);
             this.send.TabIndex = 2;
             this.send.Text = "Send";
             this.send.UseVisualStyleBackColor = true;
@@ -70,18 +79,24 @@
             // 
             // receive
             // 
-            this.receive.Location = new System.Drawing.Point(12, 117);
+            this.receive.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.receive.Location = new System.Drawing.Point(0, 0);
+            this.receive.Margin = new System.Windows.Forms.Padding(4);
             this.receive.Multiline = true;
             this.receive.Name = "receive";
-            this.receive.Size = new System.Drawing.Size(250, 99);
+            this.receive.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.receive.Size = new System.Drawing.Size(483, 273);
             this.receive.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 38);
+            this.label2.Location = new System.Drawing.Point(30, 126);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.Size = new System.Drawing.Size(87, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Baud Rate:";
             // 
@@ -119,17 +134,19 @@
             "3000000",
             "3500000",
             "4000000"});
-            this.baudRate.Location = new System.Drawing.Point(94, 35);
+            this.baudRate.Location = new System.Drawing.Point(123, 122);
+            this.baudRate.Margin = new System.Windows.Forms.Padding(4);
             this.baudRate.Name = "baudRate";
-            this.baudRate.Size = new System.Drawing.Size(84, 20);
+            this.baudRate.Size = new System.Drawing.Size(111, 23);
             this.baudRate.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 62);
+            this.label3.Location = new System.Drawing.Point(52, 189);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 12);
+            this.label3.Size = new System.Drawing.Size(63, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "Parity:";
             // 
@@ -137,21 +154,24 @@
             // 
             this.parity.FormattingEnabled = true;
             this.parity.Items.AddRange(new object[] {
-            "EVEN",
-            "ODD"});
-            this.parity.Location = new System.Drawing.Point(94, 59);
+            "NONE",
+            "ODD",
+            "EVEN"});
+            this.parity.Location = new System.Drawing.Point(123, 186);
+            this.parity.Margin = new System.Windows.Forms.Padding(4);
             this.parity.Name = "parity";
-            this.parity.Size = new System.Drawing.Size(84, 20);
+            this.parity.Size = new System.Drawing.Size(111, 23);
             this.parity.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 85);
+            this.label4.Location = new System.Drawing.Point(30, 220);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 12);
+            this.label4.Size = new System.Drawing.Size(87, 15);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Stop:";
+            this.label4.Text = "Stop Bits:";
             // 
             // stop
             // 
@@ -159,39 +179,98 @@
             this.stop.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.stop.Location = new System.Drawing.Point(94, 82);
+            this.stop.Location = new System.Drawing.Point(123, 217);
+            this.stop.Margin = new System.Windows.Forms.Padding(4);
             this.stop.Name = "stop";
-            this.stop.Size = new System.Drawing.Size(84, 20);
+            this.stop.Size = new System.Drawing.Size(111, 23);
             this.stop.TabIndex = 7;
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(185, 62);
+            this.start.Location = new System.Drawing.Point(277, 91);
+            this.start.Margin = new System.Windows.Forms.Padding(4);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(78, 40);
+            this.start.Size = new System.Drawing.Size(104, 50);
             this.start.TabIndex = 9;
-            this.start.Text = "Start";
+            this.start.Text = "Open";
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
+            // dataBits
+            // 
+            this.dataBits.FormattingEnabled = true;
+            this.dataBits.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.dataBits.Location = new System.Drawing.Point(123, 156);
+            this.dataBits.Name = "dataBits";
+            this.dataBits.Size = new System.Drawing.Size(111, 23);
+            this.dataBits.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(30, 159);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Data Bits:";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.cleanText);
+            this.panel1.Controls.Add(this.sendText);
+            this.panel1.Controls.Add(this.baudRate);
+            this.panel1.Controls.Add(this.send);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.start);
+            this.panel1.Controls.Add(this.serialPorts);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.dataBits);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.parity);
+            this.panel1.Controls.Add(this.stop);
+            this.panel1.Location = new System.Drawing.Point(0, 273);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(483, 264);
+            this.panel1.TabIndex = 12;
+            // 
+            // cleanText
+            // 
+            this.cleanText.Location = new System.Drawing.Point(396, 22);
+            this.cleanText.Name = "cleanText";
+            this.cleanText.Size = new System.Drawing.Size(75, 51);
+            this.cleanText.TabIndex = 13;
+            this.cleanText.Text = "Clean";
+            this.cleanText.UseVisualStyleBackColor = true;
+            this.cleanText.Click += new System.EventHandler(this.cleanText_Click);
+            // 
+            // sendText
+            // 
+            this.sendText.Location = new System.Drawing.Point(133, 34);
+            this.sendText.Name = "sendText";
+            this.sendText.Size = new System.Drawing.Size(248, 25);
+            this.sendText.TabIndex = 12;
+            // 
             // SerialPortW
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 228);
-            this.Controls.Add(this.start);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.stop);
-            this.Controls.Add(this.parity);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.baudRate);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(483, 538);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.receive);
-            this.Controls.Add(this.send);
-            this.Controls.Add(this.serialPorts);
-            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SerialPortW";
             this.Text = "SerialPortW";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,7 +289,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox stop;
         private System.Windows.Forms.Button start;
-
+        private System.Windows.Forms.ComboBox dataBits;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox sendText;
+        private System.Windows.Forms.Button cleanText;
     }
 }
 
