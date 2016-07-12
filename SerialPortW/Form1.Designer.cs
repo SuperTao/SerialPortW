@@ -42,6 +42,12 @@
             this.dataBits = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.regexbox = new System.Windows.Forms.TextBox();
+            this.misline_num = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.mismatch_num = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.cleanText = new System.Windows.Forms.Button();
             this.sendText = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -79,15 +85,15 @@
             // 
             // receive
             // 
-            this.receive.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.receive.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.receive.Location = new System.Drawing.Point(0, 0);
             this.receive.Margin = new System.Windows.Forms.Padding(4);
             this.receive.Multiline = true;
             this.receive.Name = "receive";
             this.receive.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.receive.Size = new System.Drawing.Size(483, 273);
+            this.receive.Size = new System.Drawing.Size(853, 273);
             this.receive.TabIndex = 3;
             // 
             // label2
@@ -187,7 +193,7 @@
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(277, 91);
+            this.start.Location = new System.Drawing.Point(719, 76);
             this.start.Margin = new System.Windows.Forms.Padding(4);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(104, 50);
@@ -221,8 +227,14 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.regexbox);
+            this.panel1.Controls.Add(this.misline_num);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.mismatch_num);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.cleanText);
             this.panel1.Controls.Add(this.sendText);
             this.panel1.Controls.Add(this.baudRate);
@@ -239,8 +251,62 @@
             this.panel1.Controls.Add(this.stop);
             this.panel1.Location = new System.Drawing.Point(0, 273);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(483, 264);
+            this.panel1.Size = new System.Drawing.Size(853, 264);
             this.panel1.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(270, 95);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 15);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "MatchString：";
+            // 
+            // regexbox
+            // 
+            this.regexbox.Location = new System.Drawing.Point(396, 91);
+            this.regexbox.Name = "regexbox";
+            this.regexbox.Size = new System.Drawing.Size(277, 25);
+            this.regexbox.TabIndex = 18;
+            // 
+            // misline_num
+            // 
+            this.misline_num.AutoSize = true;
+            this.misline_num.ForeColor = System.Drawing.Color.Red;
+            this.misline_num.Location = new System.Drawing.Point(425, 164);
+            this.misline_num.Name = "misline_num";
+            this.misline_num.Size = new System.Drawing.Size(15, 15);
+            this.misline_num.TabIndex = 17;
+            this.misline_num.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(302, 164);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(78, 15);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "misline：";
+            // 
+            // mismatch_num
+            // 
+            this.mismatch_num.AutoSize = true;
+            this.mismatch_num.ForeColor = System.Drawing.Color.Red;
+            this.mismatch_num.Location = new System.Drawing.Point(425, 130);
+            this.mismatch_num.Name = "mismatch_num";
+            this.mismatch_num.Size = new System.Drawing.Size(15, 15);
+            this.mismatch_num.TabIndex = 15;
+            this.mismatch_num.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(294, 130);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 15);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "mismatch：";
             // 
             // cleanText
             // 
@@ -263,7 +329,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 538);
+            this.ClientSize = new System.Drawing.Size(853, 538);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.receive);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -294,6 +360,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox sendText;
         private System.Windows.Forms.Button cleanText;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label misline_num;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label mismatch_num;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox regexbox;
     }
 }
 

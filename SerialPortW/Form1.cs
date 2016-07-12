@@ -7,14 +7,15 @@ using System.IO.Ports;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-
+using System.Text.RegularExpressions;
 namespace SerialPortW
 {
     public partial class SerialPortW : Form
     {
 
         SerialPort serialPort;
-
+        long misMacthNum;
+        long readLineNum;
         public SerialPortW()
         {
             InitializeComponent();
@@ -38,6 +39,8 @@ namespace SerialPortW
             dataBits.SelectedIndex = 3;
             parity.SelectedIndex = 0;
             stop.SelectedIndex = 0;
+            misMacthNum = 0;
+            readLineNum = 0;
             sendText.AppendText("abcdefg");
 
             send.BackColor = Color.Gray;
@@ -47,8 +50,30 @@ namespace SerialPortW
 
         private void dealReceive(object sender, SerialDataReceivedEventArgs e)
         {
-            String data = serialPort.ReadExisting();
-            receive.AppendText(data);
+            String regex = regexbox.Text.ToString().Trim();
+            if (!serialPort.IsOpen) return;
+            try
+            {
+                String data = serialPort.ReadLine();
+                readLineNum++;
+                receive.AppendText(data);
+                if (regex != null)
+                {
+                    bool isMatch = Regex.IsMatch(data, regex);
+                    if (!isMatch)
+                    {
+                        misMacthNum++;
+                        mismatch_num.Text = misMacthNum + "";
+                    }
+                }
+                String[] datas = data.Split(':');
+                long readnum = Int64.Parse(datas[1]);
+                misline_num.Text = readnum - readLineNum + "";
+            }
+            catch
+            {
+
+            }         
         }
 
         private void send_Click(object sender, EventArgs e)
@@ -115,6 +140,10 @@ namespace SerialPortW
             }
             else
             {
+                mismatch_num.Text ="0";
+                misline_num.Text ="0";
+                misMacthNum = 0;
+
                 serialPort.Close();
                 start.Text = "Open";
                 send.BackColor = Color.Gray;
@@ -125,5 +154,8 @@ namespace SerialPortW
         {
             receive.Clear();
         }
+
+
+       
     }
 }
