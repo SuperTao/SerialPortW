@@ -50,7 +50,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 95);
+            this.label1.Location = new System.Drawing.Point(13, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 15);
@@ -60,7 +60,7 @@
             // serialPorts
             // 
             this.serialPorts.FormattingEnabled = true;
-            this.serialPorts.Location = new System.Drawing.Point(123, 91);
+            this.serialPorts.Location = new System.Drawing.Point(122, 18);
             this.serialPorts.Margin = new System.Windows.Forms.Padding(4);
             this.serialPorts.Name = "serialPorts";
             this.serialPorts.Size = new System.Drawing.Size(111, 23);
@@ -68,10 +68,10 @@
             // 
             // send
             // 
-            this.send.Location = new System.Drawing.Point(17, 22);
+            this.send.Location = new System.Drawing.Point(18, 177);
             this.send.Margin = new System.Windows.Forms.Padding(4);
             this.send.Name = "send";
-            this.send.Size = new System.Drawing.Size(104, 51);
+            this.send.Size = new System.Drawing.Size(98, 37);
             this.send.TabIndex = 2;
             this.send.Text = "Send";
             this.send.UseVisualStyleBackColor = true;
@@ -82,18 +82,18 @@
             this.receive.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.receive.Location = new System.Drawing.Point(0, 0);
+            this.receive.Location = new System.Drawing.Point(0, -3);
             this.receive.Margin = new System.Windows.Forms.Padding(4);
             this.receive.Multiline = true;
             this.receive.Name = "receive";
             this.receive.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.receive.Size = new System.Drawing.Size(483, 273);
+            this.receive.Size = new System.Drawing.Size(532, 306);
             this.receive.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 126);
+            this.label2.Location = new System.Drawing.Point(29, 53);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 15);
@@ -134,7 +134,7 @@
             "3000000",
             "3500000",
             "4000000"});
-            this.baudRate.Location = new System.Drawing.Point(123, 122);
+            this.baudRate.Location = new System.Drawing.Point(122, 49);
             this.baudRate.Margin = new System.Windows.Forms.Padding(4);
             this.baudRate.Name = "baudRate";
             this.baudRate.Size = new System.Drawing.Size(111, 23);
@@ -143,7 +143,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 189);
+            this.label3.Location = new System.Drawing.Point(51, 116);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 15);
@@ -157,7 +157,7 @@
             "NONE",
             "ODD",
             "EVEN"});
-            this.parity.Location = new System.Drawing.Point(123, 186);
+            this.parity.Location = new System.Drawing.Point(122, 113);
             this.parity.Margin = new System.Windows.Forms.Padding(4);
             this.parity.Name = "parity";
             this.parity.Size = new System.Drawing.Size(111, 23);
@@ -166,7 +166,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 220);
+            this.label4.Location = new System.Drawing.Point(29, 147);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 15);
@@ -179,7 +179,7 @@
             this.stop.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.stop.Location = new System.Drawing.Point(123, 217);
+            this.stop.Location = new System.Drawing.Point(122, 144);
             this.stop.Margin = new System.Windows.Forms.Padding(4);
             this.stop.Name = "stop";
             this.stop.Size = new System.Drawing.Size(111, 23);
@@ -187,10 +187,10 @@
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(277, 91);
+            this.start.Location = new System.Drawing.Point(251, 18);
             this.start.Margin = new System.Windows.Forms.Padding(4);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(104, 50);
+            this.start.Size = new System.Drawing.Size(100, 37);
             this.start.TabIndex = 9;
             this.start.Text = "Open";
             this.start.UseVisualStyleBackColor = true;
@@ -204,7 +204,7 @@
             "6",
             "7",
             "8"});
-            this.dataBits.Location = new System.Drawing.Point(123, 156);
+            this.dataBits.Location = new System.Drawing.Point(122, 83);
             this.dataBits.Name = "dataBits";
             this.dataBits.Size = new System.Drawing.Size(111, 23);
             this.dataBits.TabIndex = 10;
@@ -212,7 +212,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 159);
+            this.label5.Location = new System.Drawing.Point(29, 86);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 15);
@@ -237,16 +237,16 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.parity);
             this.panel1.Controls.Add(this.stop);
-            this.panel1.Location = new System.Drawing.Point(0, 273);
+            this.panel1.Location = new System.Drawing.Point(0, 310);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(483, 264);
+            this.panel1.Size = new System.Drawing.Size(532, 223);
             this.panel1.TabIndex = 12;
             // 
             // cleanText
             // 
-            this.cleanText.Location = new System.Drawing.Point(396, 22);
+            this.cleanText.Location = new System.Drawing.Point(251, 68);
             this.cleanText.Name = "cleanText";
-            this.cleanText.Size = new System.Drawing.Size(75, 51);
+            this.cleanText.Size = new System.Drawing.Size(100, 38);
             this.cleanText.TabIndex = 13;
             this.cleanText.Text = "Clean";
             this.cleanText.UseVisualStyleBackColor = true;
@@ -254,16 +254,16 @@
             // 
             // sendText
             // 
-            this.sendText.Location = new System.Drawing.Point(133, 34);
+            this.sendText.Location = new System.Drawing.Point(122, 185);
             this.sendText.Name = "sendText";
-            this.sendText.Size = new System.Drawing.Size(248, 25);
+            this.sendText.Size = new System.Drawing.Size(270, 25);
             this.sendText.TabIndex = 12;
             // 
             // SerialPortW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 538);
+            this.ClientSize = new System.Drawing.Size(532, 534);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.receive);
             this.Margin = new System.Windows.Forms.Padding(4);

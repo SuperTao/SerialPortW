@@ -6,14 +6,6 @@ D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.csproj.GenerateReso
 D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.exe
 D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.pdb
 D:\vsProject\SerialPortW\SerialPortW\obj\Release\SerialPortW.csprojResolveAssemblyReference.cache
-C:\Users\Tony\Desktop\SerialPortW-master\SerialPortW\obj\Release\SerialPortW.pdb
-C:\Users\Tony\Desktop\SerialPortW-master\SerialPortW\bin\Release\SerialPortW.exe
-C:\Users\Tony\Desktop\SerialPortW-master\SerialPortW\bin\Release\SerialPortW.pdb
-C:\Users\Tony\Desktop\SerialPortW-master\SerialPortW\obj\Release\SerialPortW.csprojResolveAssemblyReference.cache
-C:\Users\Tony\Desktop\SerialPortW-master\SerialPortW\obj\Release\SerialPortW.SerialPortW.resources
-C:\Users\Tony\Desktop\SerialPortW-master\SerialPortW\obj\Release\SerialPortW.Properties.Resources.resources
-C:\Users\Tony\Desktop\SerialPortW-master\SerialPortW\obj\Release\SerialPortW.csproj.GenerateResource.Cache
-C:\Users\Tony\Desktop\SerialPortW-master\SerialPortW\obj\Release\SerialPortW.exe
 E:\SerialPortW\SerialPortW\bin\Release\SerialPortW.exe
 E:\SerialPortW\SerialPortW\bin\Release\SerialPortW.pdb
 E:\SerialPortW\SerialPortW\obj\Release\SerialPortW.SerialPortW.resources

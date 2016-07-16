@@ -38,7 +38,6 @@ namespace SerialPortW
             dataBits.SelectedIndex = 3;
             parity.SelectedIndex = 0;
             stop.SelectedIndex = 0;
-            sendText.AppendText("abcdefg");
 
             send.BackColor = Color.Gray;
             //创建串口对象
@@ -105,13 +104,19 @@ namespace SerialPortW
                 if (serialPort.IsOpen)
                     serialPort.Close();
 
-                setPort();
-                serialPort.DataReceived += new SerialDataReceivedEventHandler(dealReceive) ;
-
-                serialPort.Open();
-
-                start.Text = "Close";
-                send.BackColor = Color.GreenYellow;
+                try
+                {
+                    setPort();
+                    serialPort.DataReceived += new SerialDataReceivedEventHandler(dealReceive) ;
+                    serialPort.Open();
+                    start.Text = "Close";
+                    send.BackColor = Color.GreenYellow;
+                }
+                catch (Exception ex)
+                //catch (System.UnauthorizedAccessException)
+                {
+                    MessageBox.Show("current port has been used by other application! \nor some other error may happened!\n");
+                }
             }
             else
             {
