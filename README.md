@@ -8,4 +8,4 @@ version 2.0
 
 更改布局，添加端口冲突检测。
 
-![](https://github.com/TonySudo/SerialPortW/blob/master/image/serial.gif)
+![](./image/serial.gif)
