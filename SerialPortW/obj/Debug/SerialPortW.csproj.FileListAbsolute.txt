@@ -5,3 +5,11 @@ D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.Properties.Resources.
 D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.csproj.GenerateResource.Cache
 D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.exe
 D:\vsProject\SerialPortW\SerialPortW\obj\Debug\SerialPortW.pdb
+C:\Users\Tony\Desktop\git\SerialPortW\SerialPortW\obj\Debug\SerialPortW.pdb
+C:\Users\Tony\Desktop\git\SerialPortW\SerialPortW\bin\Debug\SerialPortW.exe
+C:\Users\Tony\Desktop\git\SerialPortW\SerialPortW\bin\Debug\SerialPortW.pdb
+C:\Users\Tony\Desktop\git\SerialPortW\SerialPortW\obj\Debug\SerialPortW.csprojResolveAssemblyReference.cache
+C:\Users\Tony\Desktop\git\SerialPortW\SerialPortW\obj\Debug\SerialPortW.SerialPortW.resources
+C:\Users\Tony\Desktop\git\SerialPortW\SerialPortW\obj\Debug\SerialPortW.Properties.Resources.resources
+C:\Users\Tony\Desktop\git\SerialPortW\SerialPortW\obj\Debug\SerialPortW.csproj.GenerateResource.Cache
+C:\Users\Tony\Desktop\git\SerialPortW\SerialPortW\obj\Debug\SerialPortW.exe
